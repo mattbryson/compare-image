@@ -10,19 +10,19 @@ Compares 2 images for similarity, returning a percentage of the difference (0-1)
 
 There are 2 buit in comparission methods:
 
-##comparePixels (imgA, imgB, cb(error, diff) )##
+###comparePixels (imgA, imgB, cb(error, diff) )###
 checks each pixel for any differences - best for visual comparison.
 
-##compareByChannels (imgA, imgB, cb(error, diff)##
+###compareByChannels (imgA, imgB, cb(error, diff)###
 checks each channel on each pixel - best for comparing the underlying data.
 
-##compare (imgA, imgB, comparator(bitmapA, bitmapB), cb(error, diff)##
+###compare (imgA, imgB, comparator(bitmapA, bitmapB), cb(error, diff)###
 Compare allows you to run your own comparator function.  This will receive 2 args, each a `ndarray` of pixels in raster order having shape equal to [width, height, channels]
 
 `comparator` must return the difference between the tow bitmaps.  
 
 
-##pixels vs channels##
+###pixels vs channels###
 If we take 2 images, and the only difference is the RED channel on 1 pixel.
 
 *comparePixels* looks at each pixel as a whole.  Any change is treated as a visual difference of that pixel. So a 100 x 100px image, which has 1 pixel different would be `0.1` percent different.
