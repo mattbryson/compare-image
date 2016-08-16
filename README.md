@@ -4,7 +4,7 @@ Compares 2 images for similarity, returning a percentage of the difference (0-1)
 
 # Installation
 
-npm install compare-image --save
+`npm install compare-image --save`
 
 # API
 
