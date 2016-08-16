@@ -16,8 +16,8 @@ checks each pixel for any differences - best for visual comparison.
 ##compareByChannels##
 checks each channel on each pixel - best for comparing the underlying data.
 
-
-If we take 2 images, and the only difference is the RED channel on 1 pixel in the two images.
+##pixels vs channels##
+If we take 2 images, and the only difference is the RED channel on 1 pixel.
 
 *comparePixels* looks at each pixel as a whole.  Any change is treated as a visual difference of that pixel. So a 100 x 100px image, which has 1 pixel different would be `0.1` percent different.
 
