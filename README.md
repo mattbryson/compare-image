@@ -30,7 +30,7 @@ If we take 2 images, and the only difference is the RED channel on 1 pixel.
 *compareData* would produce only a `0.025` percent difference for same image, as only 1 of the 4 channels on that pixel was different.  
 
 # API Docs
-see here.
+see [here](docs/module-compare-image.html).
 
 #Usage
 
