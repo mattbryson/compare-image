@@ -16,7 +16,7 @@ checks each pixel for any differences - best for visual comparison.
 ###compareByChannels (imgA, imgB, cb(error, diff)###
 checks each channel on each pixel - best for comparing the underlying data.
 
-###compare (imgA, imgB, comparator(bitmapA, bitmapB), cb(error, diff)###
+###compare (imgA, imgB, comparator(bitmapA, bitmapB), cb(error, diff) )###
 Compare allows you to run your own comparator function.  This will receive 2 args, each a `ndarray` of pixels in raster order having shape equal to [width, height, channels]
 
 `comparator` must return the difference between the tow bitmaps.  
