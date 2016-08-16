@@ -22,7 +22,7 @@ Compare allows you to run your own comparator function.  This will receive 2 arg
 `comparator` must return the difference between the tow bitmaps.  
 
 
-###pixels vs channels###
+##pixels vs channels##
 If we take 2 images, and the only difference is the RED channel on 1 pixel.
 
 *comparePixels* looks at each pixel as a whole.  Any change is treated as a visual difference of that pixel. So a 100 x 100px image, which has 1 pixel different would be `0.1` percent different.
