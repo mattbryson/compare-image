@@ -63,7 +63,9 @@ function compareByPixels(pxA, pxB) {
       var pxDiff = 0;
       for(var c=0; c<channels; c++) {
          pxDiff = pxA.get(x,y,c) != pxB.get(x,y,c);
-         if(pxDiff) { c=channels; }
+         if(pxDiff) {
+           c=channels;
+         }
       }
       diff+=pxDiff;
     }
